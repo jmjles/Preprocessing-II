@@ -60,3 +60,34 @@
     }
   }
 }// home
+.btn{
+  .button(white,teal);
+}
+@media (@phone){
+  .home{
+    .content-section{
+      flex-flow: column nowrap;
+
+      .text-content{
+        width: 100%;
+      }
+      .img-content{
+        width: 100%;
+      }
+    }
+    .content-pick{
+      flex-flow: column nowrap;
+      .destination{
+        margin: 0 auto 2rem;
+        width: 75%;
+      }
+    }
+
+    .inverse-content{flex-flow: column nowrap;
+      .img-content{
+        padding-left:1%;
+        order:2;
+      }
+    }
+  }
+}

@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 0;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed #C0C0C0;
+}
+nav .logo {
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+nav a {
+  font-size: 2rem;
+  color: #212529;
+  text-decoration: none;
+  flex-grow: 2;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +245,38 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.btn {
+  color: white;
+  background-color: teal;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-flow: column nowrap;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-pick {
+    flex-flow: column nowrap;
+  }
+  .home .content-pick .destination {
+    margin: 0 auto 2rem;
+    width: 75%;
+  }
+  .home .inverse-content {
+    flex-flow: column nowrap;
+  }
+  .home .inverse-content .img-content {
+    padding-left: 1%;
+    order: 2;
+  }
 }
